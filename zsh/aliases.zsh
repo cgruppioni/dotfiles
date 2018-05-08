@@ -50,3 +50,15 @@ al() { ls -t | head -n ${1:-10}; }
 # If piping something in, copy it.
 # If just doing `clip`, paste it.
 clip() { [ -t 0 ] && pbpaste || pbcopy;}
+
+
+alias test='bin/rake test:system'
+alias testfile='bin/rake test '
+alias show_pids='lsof -wni tcp:3000'
+alias kill_pid='kill -9 '
+alias upstream='git pull upstream master --rebase'
+alias h2o='cd ~/lil/h2o'
+alias runh2o='cd ~/lil/h2o; guard'
+export PATH="/usr/local/sbin:$PATH"
+alias refresh='bundle install && bundle exec rake db:migrate && npm install'
+alias -g poop=pop

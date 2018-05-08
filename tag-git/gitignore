@@ -56,3 +56,5 @@ Session.vim
 
 # Created by squirrel.vim's :Squirrel command
 .squirrel
+vendor/bundle
+.DS_Store

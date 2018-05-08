@@ -1,11 +1,11 @@
 [user]
   # Try per-repo .gitconfig instead
-  name = Gabe Berke-Williams
-  email = gabebw@gabebw.com
+  name = Casey Gruppioni
+  email = cgruppioni@gmail.com
 [core]
   editor = vim
   whitespace = trailing-space,cr-at-eol
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/cgruppioni/.gitignore
   autocrlf = false
   pager = diff-highlight | less -R --tabs=1,5
 [merge]
@@ -60,7 +60,7 @@
   # git log uses --pretty format by default, so this changes the default
   # format. It looks like this:
   # 4436819 (HEAD, origin/master, master) Short commit message [Gabe Berke-Williams, 23 hours ago]
-  pretty = %C(magenta reverse)%h%Creset%Cgreen%d %Creset%C(blue)%s %C(magenta)[%an, %cr]
+  pretty = %C(magenta reverse)%h%Creset%Cgreen%d %Creset%C(blue)%s %C(magenta)[%an, %cd]
 [svn]
   authorsfile = ~/.git-author
 
@@ -78,7 +78,7 @@
 [rerere]
   enabled = 1
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 [commit]
   template = ~/.git-template/gitmessage
   verbose = true
